@@ -33,15 +33,15 @@ namespace CarLotSimulator
             car1.MakeHonkNoise(car1.HonkNoise);
             carlot.ParkingLot.Add(car1);
 
-            //Console.WriteLine($"Number of Cars in the lot is: {CarLot.number}");
+            Console.WriteLine($"Number of Cars in the lot is: {CarLot.numberofCars}");
            
             Console.WriteLine($"\n\n");
 
                 var car2 = new Car()
                 {
-                    Make = "Ford",
-                    Model = "Focus",
-                    Year = 2013,
+                    Make = "Chevrolet",
+                    Model = "Tahoe",
+                    Year = 1998,
                     EngineNoise = "Shake, struggle...struggle",
                     HonkNoise = "Loud and proud Beep!",
                     IsDrivable = true
@@ -50,13 +50,14 @@ namespace CarLotSimulator
             car2.MakeEngineNoise(car2.EngineNoise);
             car2.MakeHonkNoise(car2.HonkNoise);
             carlot.ParkingLot.Add(car2);
-           // Console.WriteLine($"Number of Cars in the lot is: {CarLot.number}");
+            Console.WriteLine($"Number of Cars in the lot is: {CarLot.numberofCars}");
             Console.WriteLine($"\n\n");
 
             Car car3 = new Car(2005, "Grand Prix", "Purr", "Quiet beep", true, "Pontiac");
             car3.MakeEngineNoise(car3.EngineNoise);
             car3.MakeHonkNoise(car3.HonkNoise);
             carlot.ParkingLot.Add(car3);
+            Console.WriteLine($"Number of Cars in the lot is: {CarLot.numberofCars}");
             Console.WriteLine($"\n\n");
 
 
